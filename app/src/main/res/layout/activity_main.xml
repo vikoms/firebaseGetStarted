@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/signUpContainer">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/edtEmail"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/edtPassword"
+            android:inputType="textPassword"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:id="@+id/edtNama"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nis"
+            android:inputType="number"
+            android:id="@+id/edtNis"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="No.Telp"
+            android:inputType="number"
+            android:id="@+id/edtTelp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnSignUp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnSignIn"/>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
